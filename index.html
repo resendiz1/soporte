@@ -26,6 +26,8 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/estilos.css">
+  <link rel="stylesheet" href="assets/slick/slick.css">
+  <link rel="stylesheet" href="assets/slick/slick-theme.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -51,31 +53,23 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto o" href="#venta">Productos en Venta</a></li>
+          <!-- Dropdown de servicios -->
+          <li class="dropdown"><a href="#"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#servicesSuport">Soporte Técnico</a></li>
+              <li><a href="#servicesDesign">Diseño Gráfico</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown de servicios -->
+          <li><a class="nav-link scrollto o" href="#products">Productos en Venta</a></li>
           <li><a class="nav-link scrollto o" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto o" href="#faq">Preguntas Frecuentes</a></li>
           <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
      
       
 
-          
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
+
+
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li> 
           <li><a class="getstarted scrollto" href="#contact"> <i class="fas fa-paper-plane mx-2"></i>  Mandame un mensaje</a></li>
         </ul>
@@ -105,8 +99,7 @@
 
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0 mt-3" data-aos="zoom-in" data-aos-delay="400">
           <div class="icon-box">
-
-            <h4 class="title text-center"><a href="">SOPORTE TÉCNICO A COMPUTADORAS E IMPRESORAS</a></h4>
+            <h4 class="title text-center"><a href="#servicesSuport">SOPORTE TÉCNICO A COMPUTADORAS E IMPRESORAS</a></h4>
             <p >
               Realizamos diagnóstico a tus equipos de computo e impresoras gratis!!!
             </p>
@@ -134,7 +127,7 @@
 
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0 mt-3" data-aos="zoom-in" data-aos-delay="400">
           <div class="icon-box">
-            <h4 class="title text-center"><a href="">DISEÑO DE PUBLICIDAD</a></h4>
+            <h4 class="title text-center"><a href="#servicesDesign">DISEÑO DE PUBLICIDAD</a></h4>
             <p class="description">Diseñamos tus:
               <ul>
                 <li><strong>Páginas Web</strong></li>
@@ -195,11 +188,11 @@
   <main id="main">
 
         <!-- ======= Services Section ======= -->
-        <section id="services" class="services section-bg">
+        <section id="servicesSuport" class="services section-bg">
           <div class="container" data-aos="fade-up">
     
             <div class="section-title">
-              <h2>Sevicios</h2>
+              <h2>SERVICIOS DE SOPORTE TÉCNICO</h2>
               <h5 class="text-dark">Ofrecemos una gran variedad de servicios en cuanto a tecnologia se refiere, contactanos y seguro que te podremos ayudar.</h5>
             </div>
     
@@ -251,6 +244,19 @@
                 </div>
               </div>
 
+
+              <div class="col-lg-4 col-md-6 d-flex mt-3 " data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box iconbox-blue">
+                  <h4><a href="##">INSTALACIÓN Y CONFIGURACIÓN DEL SISTEMA OPERATIVO DE TU PREFERENCIA</a></h4>
+                  <p >
+                    Instalamos en tu computadora el Sistema Operativo de tu preferencia ya sea: Window, Linux o Mac. 
+                  </p>
+                  <img src="assets/img/services/so.jpg"  class="img-fluid p-3" alt="">
+                </div>
+              </div>
+
+
+
               <div class="col-lg-4 col-md-6 d-flex mt-3 " data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box iconbox-blue">
                   <h4><a href="##">INSTALACIÓN Y CONFIGURACIÓN DE PROGRAMAS </a></h4>
@@ -267,12 +273,11 @@
                   <h4><a href="##">DESBLOQUEO DE CUENTAS GOOGLE Y RECARGA DE SOFTWARE A SMARTPHONES </a></h4>
                   <p class="text-end">
                     <li>Te desbloqueamos tu teléfono si olvidaste tu cuenta de Google.</li>
-                    <li>Recargamos el sofware de tu smartphone si: <strong>No pasa del logo, Prende pero no solo se ve una pantalla negra, solo prende el foco que indica la carga.</strong></li>
+                    <li>Recargamos el sofware de tu smartphone si: <strong>No pasa del logo, Prende pero  solo se ve una pantalla negra, solo prende el foco que indica la carga, etc.</strong></li>
                   </p>
                   <img src="assets/img/services/cuenta-google.jpg"  class="img-fluid p-3" alt="">
                 </div>
               </div>
-
 
             </div>
     
@@ -281,10 +286,68 @@
 
 
 
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts section-bg">
-      <div class="container">
+     <!-- ======= Services Design Section ======= -->
+     <section id="servicesDesign" class="services section-bg">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-title">
+          <h2>SERVICIOS DE DISEÑO GRÁFICO </h2>
+          <h5 class="text-dark">.</h5>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex  mt-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <h4><a href="##" style="color: blueviolet;">DISEÑO DE INVITACIONES</a></h4>
+              <p>Diseñamos e imprimimos tus invitaciones a un precio muy accesible.</p>
+              <img src="assets/img/services/invitacion.jpg"  class="img-fluid p-3" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex mt-3 " data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <h4><a href="##">DISEÑO DE PUBLICIDAD PARA TU NEGOCIO</a></h4>
+              <p>Diseñamos: <strong>Tus folletos, lonas, logotipos, carteles, etc.</strong> .</p>
+         
+              <img src="assets/img/services/publicidad.jpg"  class="img-fluid p-3" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex mt-3 " data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <h4><a href="##">TARJETAS DE PRESENTACIÓN</a></h4>
+              <p>
+                Diseñamos tus tarjetas de presentación e imprimimos tus tarjetas de presentación a un precio muy asequible.
+              </p>
+              <img src="assets/img/services/TARJETA DE PRESENTACION.jpg"  class="img-fluid p-3" alt="">
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End SevicesDesign Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Counts Section ======= -->
+
+    <!-- <section id="counts" class="counts section-bg">
+      <div class="container">
         <div class="row justify-content-center">
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
@@ -308,21 +371,20 @@
             </div>
           </div>
 
-          
-
         </div>
-
       </div>
-    </section><!-- End Counts Section -->
+    </section> -->
+    
+    <!-- End Counts Section -->
 
 
 
    <!-- ======= Products Section ======= -->
-   <section id="services" class="services section-bg">
+   <section id="products" class="services section-bg">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Sevicios</h2>
+        <h2>PRODUCTOS EN VENTA</h2>
         <h5 class="text-dark">Ofrecemos una gran variedad de servicios en cuanto a tecnologia se refiere, contactanos y seguro que te podremos ayudar.</h5>
       </div>
 
@@ -333,6 +395,7 @@
             <h4><a href="##">MANTENIMIENTO A EQUIPO DE CÓMPUTO</a></h4>
             <p>Realizamos mantenimiento preventivo y correctivo a tu equipo de cómputo.</p>
             <img src="assets/img/services/reapir.png"  class="img-fluid p-3" alt="">
+            <span class="badge bg-success"><h6>$100</h6></span>
           </div>
         </div>
 
@@ -378,7 +441,7 @@
 
 
     <!-- ======= About Video Section ======= -->
-    <section id="about-video" class="about-video">
+    <!-- <section id="about-video" class="about-video">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -410,7 +473,18 @@
         </div>
 
       </div>
-    </section><!-- End About Video Section -->
+    </section>End About Video Section -->
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
@@ -418,8 +492,9 @@
 
         <div class="row">
 
+          <div class="carousel">
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="assets/img/clients/1.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/1.png" class="img-fluid h-75" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
@@ -441,14 +516,21 @@
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/10.png" class="img-fluid" alt="">
           </div>
+        </div>
 
         </div>
 
       </div>
     </section><!-- End Clients Section -->
 
+
+
+
+
+
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+
+    <!-- <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -470,66 +552,17 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
+            </div>
           </div>
+        
           <div class="swiper-pagination"></div>
+ 
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    
+    <!-- End Testimonials Section -->
 
 
 
@@ -701,19 +734,20 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">¿Dónde nos puedes encontrar? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                 Nos puedes encontrar a través de nuestro número de teléfono <strong>(249)172-54-30</strong>.
+                 <a href="tel:+522491725430" class="btn btn-primary"> <i class="fa fa-phone"></i> Presiona para llamar </a>
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">¿Tus servicios cuentan con garantia? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                 Por su puesto, contamos con garantia de satisfación, si no te resolvemos tu problema no pagas .
                 </p>
               </div>
             </li>
@@ -774,7 +808,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              La verdad es que la experiencia de conocer a alguien dice mas que un simple texto en una página web, dicho eso yo creo que deberias contactarnos para resolver tu problema o necesidad al fin contamos con garantia de satisfación y si el servicio no te gusta esres libre de reclamar tu dinero de vuelta.
+              Lo cierto  es que la experiencia de conocer a alguien dice mas que un simple texto en una página web, dicho eso yo creo que deberias contactarnos para resolver tu problema o necesidad al fin contamos con garantia de satisfación y si el servicio no te gusta esres libre de reclamar tu dinero de vuelta.
             </p>
           
           </div>
@@ -911,6 +945,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script type="text/javascript" src="assets/vendor/jquery-3.6.0.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -918,8 +953,44 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/slick/slick.js" ></script>
+
 
   <!-- Template Main JS File -->
+  <script>
+$('.carousel').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  autoplaySpeed: 1000,
+  autoplay: true,
+  infinite: true,
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+		
+  </script>
+
+
+
   <script src="assets/js/main.js"></script>
 
 </body>
