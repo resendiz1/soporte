@@ -117,3 +117,17 @@ $('.imagenes').slick({
     ]
   });
 
+
+
+  const logo = document.getElementById('logo');
+
+    logo.addEventListener('click', function(){
+       let nombre =  prompt('Sheeeee decime tu nombre')
+        if(nombre){
+          alert(`Clickeaste el logo loco, lo recontra clickeaste ${nombre}`)
+        }
+        else{
+          alert('Locooo tenes que poner tu nombre')
+        }
+   
+      })
