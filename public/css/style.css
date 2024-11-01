@@ -1,0 +1,27 @@
+
+
+.banner{
+    background-image:url('/img/banner1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-with-border {
+    color: white; /* Color del texto */
+    text-shadow: 
+        1px 1px 0px black,  /* Sombra a la derecha-abajo */
+        -1px 1px 0px black, /* Sombra a la izquierda-abajo */
+        1px -1px 0px black, /* Sombra a la derecha-arriba */
+        -1px -1px 0px black; /* Sombra a la izquierda-arriba */
+    font-size: 50px; /* Tamaño del texto */
+}
+
+.bolder{
+    font-weight: bolder;
+}
+.titulo{
+
+    font-size:20pt;
+
+}
