@@ -114,3 +114,95 @@
     clip-path: ellipse(120% 70% at 50% 0%); /* Forma curva */
     z-index: 1;
 }
+
+
+.soporte1{
+    background-image: url('/img/soporte1.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del div */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Cambia el color del texto si es necesario */
+
+    height: 700px; /* Establece una altura para el div */
+    position: relative; /* Necesario para manejar correctamente el contenido dentro */
+    transition: transform 0.5s ease-in-out;
+}
+
+.soporte2{
+    background-image: url('/img/soporte2.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del div */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Cambia el color del texto si es necesario */
+    height: 700px; /* Establece una altura para el div */
+    position: relative; /* Necesario para manejar correctamente el contenido dentro */
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.soporte2 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo del contenido al hacer hover */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    text-align: center;
+}
+
+/* Aparecer el overlay al pasar el mouse */
+.soporte2:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+
+.soporte3{
+    background-image: url('/img/soporte3.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del div */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Cambia el color del texto si es necesario */
+    height: 700px; /* Establece una altura para el div */
+    position: relative; /* Necesario para manejar correctamente el contenido dentro */
+    transition: transform 0.5s ease-in-out;
+}
+
+.soporte1:hover,
+.soporte2:hover,
+.soporte3:hover{
+    transform: scale(1.1);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.flotante{
+    position: fixed;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+
+}
