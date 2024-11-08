@@ -206,3 +206,9 @@ a{
     z-index: 10000;
 
 }
+
+.banner-form{
+    /* background-image:url('/img/datacenter.jpg'); */
+    background-color: rgb(212, 229, 244);
+}
+

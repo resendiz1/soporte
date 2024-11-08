@@ -14,8 +14,9 @@
     </div>
 
     <div class="col-12  sin_linea">
-        <a href="#soporte" class="fw-bold">CONTACTO</a>
+        <a href="#contacto" class="fw-bold">CONTACTO</a>
     </div>
+
 
 
 </div>
